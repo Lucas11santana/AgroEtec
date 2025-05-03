@@ -1,0 +1,15 @@
+
+DOURADO:
+#c9a43b
+
+AZUL:
+#212f47
+AMARELO:
+#111721
+
+
+marromzinho
+#E3E0D9
+
+bege
+#F0EEE4
