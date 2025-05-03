@@ -1,168 +1,153 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0EEE4;
 }
 
 header {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 30px 20px;
-	background-color: #fff;
-	border-bottom: 1px solid #ddd;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 9999;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #F0EEE4;
+    border-bottom: 1px solid #ddd;
 }
 
 header .logo img {
-	height: 48px;
-	width: 60px;
-	border-radius: 15px;
-	background-color: #A8E6A3;
-	/* Cor de fundo verde claro */
-	padding: 10px, 20px;
+    height: 48px;
+    width: 60px;
+    border-radius: 15px;
+    background-color: #A8E6A3;
+    /* Cor de fundo verde claro */
+    padding: 10px, 20px;
 }
 
 header nav {
-	display: flex;
-	gap: 20px;
+    display: flex;
+    gap: 20px;
 
 }
 
 header nav li {
-	display: inline;
+    display: inline;
 }
 
 header nav li a {
-	text-decoration: none;
-	color: #000;
-	font-weight: 400;
-	position: relative;
-	font-size: 16px;
-	padding-bottom: 48px;
-	/* Um espacinho para a barra */
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 46px;
+    /* Um espacinho para a barra */
 }
 
 header nav li a::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 5px;
-	background-color: #A0E4B0;
-	/* Verde suave */
-	transform: scaleX(0);
-	transform-origin: left;
-	transition: transform 0.3s ease-in-out;
-	border-radius: 1px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #A0E4B0;
+    /* Verde suave */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1px;
 }
 
 header nav li a:hover::after {
-	transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 
 header .icons {
-	display: flex;
-	align-items: center;
-	gap: 17px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
 }
 
 
 /********************************************************************************/
-.cat-icon {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 20px;
-	padding: 10px 0;
-}
 
-/* Wrapper da lupa e input */
-.input-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
-
-/* Estilo do input escondido (quando não está em foco) */
-.input {
-	border: none;
-	height: 40px;
-	width: 40px;
-	padding: 5px;
-	outline: none;
-	border-radius: 50%;
-	transition: .5s ease-in-out;
-	color: black;
-	text-align: left;
-	padding-left: 10px;
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	right: 0;
-	z-index: 1;
-	background-color: white;
-}
-
-/* Placeholder suave */
-.input::placeholder {
-	color: #8f8f8f;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-}
-
-/* Botões dos ícones (lupa, carrinho, usuário) */
-.icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	width: 40px;
-	height: 40px;
-	border: none;
-	outline: none;
-	border-radius: 50%;
-	background-color: transparent;
-	transition: .2s linear;
-	position: relative;
-}
-
-/* Ícones SVG dentro dos botões */
-.icon svg {
-	width: 24px;
-	height: 24px;
-	stroke: #212f47;
-}
-
-/* Quando o botão é focado, mostrar o input */
-.icon:focus~.input,
-.input:focus {
-	width: 300px;
-	border-radius: 5px;
-	background-color: transparent;
-	border-bottom: 3px solid #283650;
-	transition: all 0.5s cubic-bezier(0, 0.110, 0.35, 2);
-	padding-left: 15px;
-	opacity: 1;
-	visibility: visible;
-	position: absolute;
-	right: 0;
-}
-
-/* Mostrar o placeholder ao focar */
-.icon:focus~.input::placeholder,
-.input:focus::placeholder {
-	opacity: 1;
-}
-
-/* Hover/focus no botão altera cor do ícone */
-.icon:focus svg path,
-.icon:active svg path {
-	stroke: black;
-}
+/* CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .nav-icons a {
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .nav-icons a:hover {
+    color: #A0E4B0;
+  }
+/*******************************************Pesquisa**********************************************/  
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .input-pesquisa{
+    max-width: 250px;
+    height: 15px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #E3E0D9;
+    caret-color: #f7f7f8;
+    color: black;
+    padding: 7px 5px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  
+  .input-pesquisa:hover {
+    border: 2px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  .input-pesquisa:focus {
+    background-color: #E3E0D9;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: #A0E4B0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search__btn:hover {
+    background-color: #6a9975;
+  }
 
 /* Encapsular todos os estilos da página de usuário dentro de .user para evitar conflitos */
 

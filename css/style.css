@@ -80,29 +80,8 @@ header .icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .search-form {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .search-form input {
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .search-form button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #333;
-  }
   
   .nav-icons a {
     margin-left: 20px;
@@ -112,9 +91,65 @@ header .icons {
   }
   
   .nav-icons a:hover {
-    color: #ff4d4d;
+    color: #A0E4B0;
+  }
+/*******************************************Pesquisa**********************************************/  
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
   
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .input-pesquisa{
+    max-width: 250px;
+    height: 15px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #E3E0D9;
+    caret-color: #f7f7f8;
+    color: black;
+    padding: 7px 5px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  
+  .input-pesquisa:hover {
+    border: 2px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  .input-pesquisa:focus {
+    background-color: #E3E0D9;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: #A0E4B0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search__btn:hover {
+    background-color: #6a9975;
+  }
+
+/*******************************************Pesquisa**********************************************/  
 
 /********************************************************************************/
 
