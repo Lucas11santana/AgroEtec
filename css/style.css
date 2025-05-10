@@ -29,7 +29,6 @@ header .logo img {
 header nav {
     display: flex;
     gap: 20px;
-
 }
 
 header nav li {
@@ -108,7 +107,7 @@ header .icons {
   }
   
   .input-pesquisa{
-    max-width: 250px;
+    width: 290px;
     height: 15px;
     outline: none;
     font-size: 14px;
@@ -187,7 +186,9 @@ header .icons {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1;
 }
@@ -198,6 +199,30 @@ header .icons {
 
 .meu-carousel-button.next {
     right: 10px;
+}
+
+.meu-carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.meu-carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.meu-carousel-indicators button.active {
+    background-color: white;
 }
 
 
@@ -396,7 +421,7 @@ header .icons {
 
 /* Container dos produtos */
 .Produtos-pai {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 10px 10px;
 }
@@ -406,7 +431,7 @@ header .icons {
     border-bottom: #000 solid 2px;
     padding-top: 100px;
     text-align: justify;
-    font-size: 32px;
+    font-size: 25px;
     color: rgb(43, 42, 42);
 }
 /* Container de produtos */
@@ -424,7 +449,7 @@ header .icons {
     width: 290px;
     background-color: #E3E0D9;
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -475,17 +500,48 @@ header .icons {
     background-color: #e74c3c;
 }
 
-/* Coração */
+/* Estilo do coração (favoritar) */
 .heart {
     position: absolute;
+    background-color: white;
     top: 8px;
     right: 8px;
-    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
     font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.heart:hover {
-    color: #e74c3c;
+.heart i {
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+
+.heart .filled {
+    opacity: 0;
+}
+
+.heart.favoritado .filled {
+    opacity: 1;
+}
+
+.heart.favoritado .fa-regular {
+    opacity: 0;
+}
+
+/* Efeito de hover */
+.heart:hover .filled {
+    opacity: 1;
+}
+
+.heart:hover .fa-regular {
+    opacity: 0;
 }
 
 /* Nome do produto */
@@ -521,7 +577,7 @@ header .icons {
     font-family: 'Poppins', sans-serif;
     background-color: #1c663b;
     border: none;
-    border-radius: 2px;
+    border-radius: 9px;
     padding: 6px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -603,13 +659,14 @@ header .icons {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 .Blog {
+    background-color: #E3E0D9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 60px 20px;
-    margin-bottom: 100px;
+    
 }
 
 .Blog h4 {
@@ -708,7 +765,6 @@ header .icons {
   
   .cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
