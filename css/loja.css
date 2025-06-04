@@ -162,7 +162,11 @@ header .icons {
 
 .background {
   width: 100vw;
+<<<<<<< HEAD
   height: 390px;
+=======
+  height: 350px;
+>>>>>>> 28f582a5208ea5b76d2725478549667ca1306fc3
   object-fit: cover;
 }
 

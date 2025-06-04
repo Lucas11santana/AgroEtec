@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AgroEtec</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="icon" href="../img/logotipo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+
+    <div class="page-content">
+        <div class="user">
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <form method="post" action="cadastro.php" >
+                        <h1>Crie sua Conta</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <span>digite seus dados!</span>
+                        <input type="text" placeholder="Nome" required />
+                        <input type="email" placeholder="E-mail" required />
+                        <input type="password" placeholder="Crie uma Senha" />
+                        <button type="submit">inscrever-se</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form method="post" action="login.php">
+                        <h1>Login</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <span>digite seus dados!</span>
+                        <input type="email" placeholder="E-mail" required />
+                        <input type="password" placeholder="Senha" required />
+                        <a href="#">Esqueceu a Senha?</a>
+                        <button>Entrar</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Bem-vindo!</h1>
+                            <p>Para continuar conectado conosco, faça login com suas informações pessoais</p>
+                            <button class="ghost" id="signIn">Entrar</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Olá, Novamente!</h1>
+                            <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                            <button class="ghost" id="signUp">Cadastre-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/user.js"></script>
+
+  
+
+</body>
+
+</html>
