@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AgroEtec</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logotipo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logotipo.png" alt="Logo">
+        </div>
+        <nav>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="./views/loja.html">Loja</a></li>
+            <li><a href="./views/sobre.html">Sobre Nós</a></li>
+            <li><a href="#">AgroEtec</a></li>
+            <li><a href="#">Contato</a></li>
+        </nav>
+        <!-- HTML -->
+        <navbar class="navbar">
+            <form class="search-form">
+                <div class="pesquisa">
+                    <input type="text" name="text" class="input-pesquisa" placeholder="Pesquisa..">
+                    <button class="search__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                            <path
+                                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                                fill="#efeff1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <div class="nav-icons">
+                <a id="abrir-carrinho" href="javascript:void(0);">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="carrinho-contador" class="carrinho-contador" style="display:none;">0</span>
+                </a>
+                <a href="./views/favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                <a href="./views/user.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </navbar>
+
+
+
+
+    </header>
+
+
+    <main>
+        <script src="./js/carrosel.js"></script>
+
+        <div class="meu-carousel-container">
+            <div class="meu-carousel-track">
+                <div class="meu-carousel-slide"><img src="./img/banner1.jpg" alt="Imagem 1" /></div>
+                <div class="meu-carousel-slide"><img src="./img/banner2.jpg" alt="Imagem 2" /></div>
+                <div class="meu-carousel-slide"><img src="./img/banner3.jpg" alt="Imagem 3" /></div>
+                <div class="meu-carousel-slide"><img src="./img/banner4.jpg" alt="Imagem 4" /></div>
+            </div>
+            <button class="meu-carousel-button prev">&#10094;</button>
+            <button class="meu-carousel-button next">&#10095;</button>
+            <div class="meu-carousel-indicators"></div> <!-- bolinhas aqui -->
+        </div>
+
+
+
+
+        <section class="slogan">
+            <h1>Onde a Terra floresce, nasce vida</h1>
+            <p>Nutrição e cuidado que nascem da terra.</p>
+        </section>
+    </main>
+
+    <section class="sustentavel-compacto">
+        <div class="conteudo">
+            <h1>Compre Sustentável</h1>
+            <h2>“Alimentos que Respeitam o Planeta.”</h2>
+            <p>
+                Oferecemos alimentos que respeitam o meio ambiente e promovem uma alimentação saudável.
+                Junte-se a nós em uma jornada rumo a um futuro mais verde!
+            </p>
+            <a href="#" class="btn-clique">Clique aqui</a>
+        </div>
+        <div class="imagem">
+            <img src="./img/sub-banner.jpg" alt="Imagem de alimentos sustentáveis">
+        </div>
+    </section>
+
+
+    <!-------------------------------------------CATEGORIAS ----------------------------------------------->
+
+    <div class="titulos">
+        <h1>Explore as Categorias</h1>
+    </div>
+    <div class="cat-pai">
+        <div class="cat-card">
+            <img src="./img/cat(frutas).jpg" alt="Categoria 1" />
+            <div class="cat-content">
+                <h1>FRUTAS</h1>
+                <a href="./paginas/sub-paginas/frutas.html"><button>Loja</button></a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="./img/cat(legumes).jpg" alt="Categoria 2" />
+            <div class="cat-content">
+                <h1>HORTALIÇAS</h1>
+                <a href="./paginas/sub-paginas/hortalicas.html"><button>Loja</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="cat-pai">
+        <div class="cat-card">
+            <img src="./img/graos.png" alt="Categoria 1" />
+            <div class="cat-content">
+                <h1>GRÃOS E SEMENTES</h1>
+                <a href="./paginas/sub-paginas/grao.html"><button>Loja</button></a>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="./img/cat (ovos).jpg" alt="Categoria 2" />
+            <div class="cat-content">
+                <h1>OVOS</h1>
+                <a href="./paginas/sub-paginas/ovos.html"><button>Loja</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------CATEGORIAS ----------------------------------------------->
+
+    <!-------------------------------------- Produtos em Destaque ----------------------------------->
+
+    <script src="./js/favoritos.js"></script>
+    <!-- FRUTAS -->
+    <div class="Produtos-pai">
+        <h2 class="produtos-titulo">.Frutas</h2>
+        <div class="Conteiner-produtos">
+            <div class="produto-card" data-id="1">
+                <div class="produto-imagem-container">
+                    <img src="./img/morangos.jpg" alt="Morango" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-15%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Morango (250g)</h3>
+                    <span class="produto-preco">R$ 8,99</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="2">
+                <div class="produto-imagem-container">
+                    <img src="./img/uvas.jpg" alt="Uvas" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Uvas (500g)</h3>
+                    <span class="produto-preco">R$ 10,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="3">
+                <div class="produto-imagem-container">
+                    <img src="./img/orange.jpg" alt="Laranja" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-15%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Laranja (1kg)</h3>
+                    <span class="produto-preco">R$ 4,20</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="4">
+                <div class="produto-imagem-container">
+                    <img src="./img/limon.jpg" alt="Limão" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Limão (500g)</h3>
+                    <span class="produto-preco">R$ 2,80</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="5">
+                <div class="produto-imagem-container">
+                    <img src="./img/abacates.jpg" alt="Abacate" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Abacate (1Un)</h3>
+                    <span class="produto-preco">R$ 5,80</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="6">
+                <div class="produto-imagem-container">
+                    <img src="./img/graviola.jpg" alt="Graviola" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Graviola (1kg)</h3>
+                    <span class="produto-preco">R$ 9,90</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="7">
+                <div class="produto-imagem-container">
+                    <img src="./img/mamaoo.jpg" alt="Mamão" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Mamão (1kg)</h3>
+                    <span class="produto-preco">R$ 4,80</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="8">
+                <div class="produto-imagem-container">
+                    <img src="./img/abacaxi.jpg" alt="Abacaxi" class="produto-imagem" />
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/frutas.html">Frutas</a>
+                    <h3 class="produto-nome">Abacaxi (1Un)</h3>
+                    <span class="produto-preco">R$ 5,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------- Produtos 2 ----------------------------------->
+
+    <div class="Produtos-pai">
+        <h2 class="produtos-titulo">.Hortaliças</h2>
+        <div class="Conteiner-produtos">
+            <div class="produto-card" data-id="9">
+                <div class="produto-imagem-container">
+                    <img src="./img/alface.jpg" alt="Alface" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Alface (1Un)</h3>
+                    <span class="produto-preco">R$ 4,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="10">
+                <div class="produto-imagem-container">
+                    <img src="./img/cenoura.jpg" alt="Cenoura" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Cenoura (1kg)</h3>
+                    <span class="produto-preco">R$ 7,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="11">
+                <div class="produto-imagem-container">
+                    <img src="./img/tomate.jpg" alt="Tomate" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-15%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Tomate (1kg)</h3>
+                    <span class="produto-preco">R$ 9,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="12">
+                <div class="produto-imagem-container">
+                    <img src="./img/cebola.png" alt="Cebola" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Cebola (1kg)</h3>
+                    <span class="produto-preco">R$ 6,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Conteiner-produtos">
+            <div class="produto-card" data-id="13">
+                <div class="produto-imagem-container">
+                    <img src="./img/beterraba.png" alt="Beterraba" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Beterraba (1kg)</h3>
+                    <span class="produto-preco">R$ 6,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="14">
+                <div class="produto-imagem-container">
+                    <img src="./img/espinafre.jpg" alt="Espinafre" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <!-- Sem desconto -->
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Espinafre (1Un)</h3>
+                    <span class="produto-preco">R$ 4,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="15">
+                <div class="produto-imagem-container">
+                    <img src="./img/pepino.png" alt="Pepino" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Pepino (1kg)</h3>
+                    <span class="produto-preco">R$ 5,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="16">
+                <div class="produto-imagem-container">
+                    <img src="./img/batata-doce.jpg" alt="Batata-doce" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/hortalicas.html">Hortaliças</a>
+                    <h3 class="produto-nome">Batata-doce (1kg)</h3>
+                    <span class="produto-preco">R$ 6,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Produtos-pai">
+        <h2 class="produtos-titulo">.Grãos e Sementes</h2>
+        <div class="Conteiner-produtos">
+            <!-- Produto 1 -->
+            <div class="produto-card" data-id="17">
+                <div class="produto-imagem-container">
+                    <img src="./img/grao-cafe.jpg" alt="Grão de Café Torrado (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Grão de Café Torrado (1kg)</h3>
+                    <span class="produto-preco">R$ 18,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto-card" data-id="18">
+                <div class="produto-imagem-container">
+                    <img src="./img/grao-cacau.jpg" alt="Grão de Cacau (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Grão de Cacau (1kg)</h3>
+                    <span class="produto-preco">R$ 60,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto-card" data-id="19">
+                <div class="produto-imagem-container">
+                    <img src="./img/grao-de-bico.jpg" alt="Grão de Bico (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Grão de Bico (1kg)</h3>
+                    <span class="produto-preco">R$ 20,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto-card" data-id="20">
+                <div class="produto-imagem-container">
+                    <img src="./img/grao-arroz.jpg" alt="Grão Arroz Integral (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Grão Arroz Integral (1kg)</h3>
+                    <span class="produto-preco">R$ 9,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="Conteiner-produtos">
+            <!-- Produto 5 -->
+            <div class="produto-card" data-id="21">
+                <div class="produto-imagem-container">
+                    <img src="./img/sem-abobora.jpg" alt="Semente de Abóbora (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Semente de Abóbora (1kg)</h3>
+                    <span class="produto-preco">R$ 104,90</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="produto-card" data-id="22">
+                <div class="produto-imagem-container">
+                    <img src="./img/sem-girassol.jpg" alt="Semente de Girassol (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Semente de Girassol (1kg)</h3>
+                    <span class="produto-preco">R$ 3,83</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="produto-card" data-id="23">
+                <div class="produto-imagem-container">
+                    <img src="./img/sem-chia.jpg" alt="Semente de Chia (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Semente de Chia (1kg)</h3>
+                    <span class="produto-preco">R$ 18,90</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="produto-card" data-id="24">
+                <div class="produto-imagem-container">
+                    <img src="./img/sem-gergelim.jpg" alt="Semente de Gergelim (1kg)" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/grao.html">Grãos e Sementes</a>
+                    <h3 class="produto-nome">Semente de Gergelim (1kg)</h3>
+                    <span class="produto-preco">R$ 6,10</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Produtos-pai">
+        <h2 class="produtos-titulo">.Ovos</h2>
+        <div class="Conteiner-produtos">
+            <div class="produto-card" data-id="25">
+                <div class="produto-imagem-container">
+                    <img src="./img/caipira.jpg" alt="Ovo Caipira" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-10%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/ovos.html">Ovos</a>
+                    <h3 class="produto-nome">Ovo Caipira (12 Un)</h3>
+                    <span class="produto-preco">R$ 21,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="26">
+                <div class="produto-imagem-container">
+                    <img src="./img/codorna.jpg" alt="Ovo de Codorna" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <span class="desconto">-5%</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/ovos.html">Ovos</a>
+                    <h3 class="produto-nome">Ovo de Codorna (30 Un)</h3>
+                    <span class="produto-preco">R$ 13,50</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="27">
+                <div class="produto-imagem-container">
+                    <img src="./img/ovo-azul.jpg" alt="Ovo Azul" class="produto-imagem">
+                    <span class="oferta-badge">Oferta</span>
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/ovos.html">Ovos</a>
+                    <h3 class="produto-nome">Ovo Azul-Galinha Araucana (1 Un)</h3>
+                    <span class="produto-preco">R$ 27,90</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+            <div class="produto-card" data-id="28">
+                <div class="produto-imagem-container">
+                    <img src="./img/ovo-avestruz.JPG" alt="Ovo de Avestruz" class="produto-imagem">
+                    <a class="heart" href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart filled"></i>
+                    </a>
+                </div>
+                <div class="produto-info">
+                    <a class="produto-categoria" href="./views/sub-paginas/ovos.html">Ovos</a>
+                    <h3 class="produto-nome">Ovo de Avestruz (1 Un)</h3>
+                    <span class="produto-preco">R$ 250,00</span>
+                    <button class="add-ao-carrinho">
+                        <span>Comprar</span>
+                        <img src="./img/shopping-bag-white-icon.png" alt="Carrinho" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------- Produtos em Destaque ----------------------------------->
+
+    <section class="testimonials">
+        <h4>Avaliações</h4>
+        <h2>O que os clientes dizem</h2>
+        <p class="description">
+            Valorizamos muito relacionamentos sólidos e constatamos os benefícios que eles trazem
+            aos nossos negócios. O feedback dos clientes é essencial para nos ajudar a acertar.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Natália Ribeiro">
+                <p class="quote">❝ A entrega foi super rápida e os produtos chegaram muito bem embalados. Estou muito
+                    satisfeita com a minha compra. ❞</p>
+                <h3 class="name">Natália Ribeiro</h3>
+                <p class="role">Contadora</p>
+            </div>
+
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Célia Almeida">
+                <p class="quote">❝ Adorei a experiência de compra! O site é fácil de navegar e encontrei tudo o que
+                    precisava em poucos minutos. ❞</p>
+                <h3 class="name">Célia Almeida</h3>
+                <p class="role">Secretária</p>
+            </div>
+
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Roberto Nunes">
+                <p class="quote">❝ Produto de ótima qualidade e o atendimento ao cliente foi excelente quando precisei
+                    tirar dúvidas. Comprarei novamente com certeza! ❞</p>
+                <h3 class="name">Roberto Nunes</h3>
+                <p class="role">Jornalista</p>
+            </div>
+
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Lucas Mendes">
+                <p class="quote">❝ Fui surpreendido positivamente pela promoção. Uma das melhores lojas online que já
+                    comprei! ❞</p>
+                <h3 class="name">Bernardo Mendes</h3>
+                <p class="role">Advogado</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-------------------------------------- Nosso Blog   ----------------------------------------->
+
+    <div class="Blog">
+        <h4>Blog</h4>
+        <h1>Não Perca uma Notícia!</h1>
+        <h3>Inscreva-se no nosso blog para receber as últimas notícias, novidades e tudo sobre o Agro.</h3>
+        <div class="form-inscricao">
+            <input type="text" placeholder="Digite seu e-mail" class="input-email">
+            <button class="btn-inscrever">Inscrever-se</button>
+        </div>
+    </div>
+
+
+    <!-------------------------------------- Nosso Blog   ----------------------------------------->
+    <!-- Carrinho Lateral -->
+    <div id="carrinho-lateral" class="carrinho-lateral">
+        <div class="carrinho-header">
+            <h2>Carrinho</h2>
+            <span id="fechar-carrinho" class="fechar-carrinho">&times;</span>
+        </div>
+        <div id="carrinho-itens" class="carrinho-itens"></div>
+        <div class="carrinho-footer">
+            <span>Total: <strong id="carrinho-total">R$ 0,00</strong></span>
+            <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+    <div id="carrinho-overlay" class="carrinho-overlay"></div>
+
+    <!-- Carrinho JS -->
+    <script src="./js/carrinho.js"></script>
+
+    <!-- Site footer -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-brand">
+                <div class="footer-logo-nome" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="./img/logotipo.png" alt="Logo AgroEtec" class="footer-logo">
+                    <span class="footer-nome">AgroEtec</span>
+                </div>
+                <p class="footer-desc">
+                    AgroEtec conecta você aos melhores produtos naturais, frescos e sustentáveis.<br>
+                    Qualidade e confiança para sua família.
+                </p>
+                <div class="footer-social-icons">
+                    <a class="x-icon" href="#" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a class="insta-icon" href="#" title="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="link-icon" href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="face-icon" href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Produto</h4>
+                <ul>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Tutoriais</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-bottom-row">
+            <span>&copy; 2025 AgroEtec. Todos os direitos reservados.</span>
+            <div class="footer-bottom-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Configurações de Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0EEE4;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 9999;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #F0EEE4;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 48px;
+    width: 60px;
+    border-radius: 15px;
+    background-color: #A8E6A3;
+    /* Cor de fundo verde claro */
+    padding: 10px, 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 46px;
+    /* Um espacinho para a barra */
+}
+
+header nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #A0E4B0;
+    /* Verde suave */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1px;
+}
+
+header nav li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+header .icons {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+
+/********************************************************************************/
+
+/* CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .nav-icons a {
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .nav-icons a:hover {
+    color: #A0E4B0;
+  }
+/*******************************************Pesquisa**********************************************/  
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .input-pesquisa{
+    width: 290px;
+    height: 15px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #E3E0D9;
+    caret-color: #f7f7f8;
+    color: black;
+    padding: 7px 5px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  .input-pesquisa:hover {
+    border: 2px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  .input-pesquisa:focus {
+    background-color: #E3E0D9;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: #A0E4B0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search__btn:hover {
+    background-color: #6a9975;
+  }
+
+/**********************************************************************************************************************************/
+/* Contêiner principal */
+main {
+    padding-top: 120px;
+}
+
+/* Título da seção */
+h2 {
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #212f47;
+    margin-bottom: 20px;
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilo dos Cards de Produto */
+.produto-card {
+    width: 290px;
+    background-color: #E3E0D9;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do Produto */
+.produto-imagem-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botão de Remover Favorito */
+.remover-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remover-fav:hover {
+    background-color: #f0d3d5;
+}
+
+.remover-fav i {
+    color: #7e0400;
+}
+
+/* Nome do Produto */
+.produto-nome {
+    margin: 10px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212f47;
+}
+
+/* Preço do Produto */
+.produto-preco {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #212f47;
+    margin: 10px;
+}
+
+/* Adicionando um estilo para o botão de adicionar ao carrinho (opcional) */
+.add-ao-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c663b;
+    border: none;
+    border-radius: 9px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-ao-carrinho:hover {
+    background-color: #4b9b6c;
+}
+
+.add-ao-carrinho span {
+    display: block;
+}
+
+.add-ao-carrinho img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
