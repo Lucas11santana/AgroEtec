@@ -150,7 +150,6 @@ header .icons {
   }
 
 /* Encapsular todos os estilos da página de usuário dentro de .user para evitar conflitos */
-<<<<<<< HEAD
 .logotipo{
 	align-items: center;
 }
@@ -158,8 +157,6 @@ header .icons {
 	width: 30px;
 	height: 25px;
 }
-=======
->>>>>>> 28f582a5208ea5b76d2725478549667ca1306fc3
 
 .page-content {
 	display: flex;
@@ -396,14 +393,10 @@ header .icons {
 	height: 40px;
 	width: 40px;
 }
-<<<<<<< HEAD
 .esqueceu-senha:hover{
 	color: #A0E4B0;
 	transition: ease-in-out 0.3s;
 }
-=======
-
->>>>>>> 28f582a5208ea5b76d2725478549667ca1306fc3
 
 
 /* ===================== FOOTER ====================== */
