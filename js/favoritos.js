@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                     heart.classList.add("favoritado");
                     localStorage.setItem("favoritos", JSON.stringify(favoritos));
-                    alert('Produto favoritado!');
+                    
                 } else {
                     favoritos = favoritos.filter(p => p.id !== produtoId);
                     heart.classList.remove("favoritado");
                     localStorage.setItem("favoritos", JSON.stringify(favoritos));
-                    alert('Produto removido dos favoritos!');
+                    
                 }
             });
         });

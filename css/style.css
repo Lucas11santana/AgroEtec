@@ -1087,6 +1087,7 @@ footer {
     align-items: center;
   }
   .nav-icons {
+    align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 8px;
@@ -1177,6 +1178,7 @@ footer {
     background: #212F47;
     color: #fff;
     font-weight: bold;
+    font-family: 'poppins', sans-serif;
     padding: 8px 18px;
     border: #000 solid 1px;
     cursor: pointer;
@@ -1220,6 +1222,6 @@ footer {
 }
 @media (max-width: 500px) {
     .carrinho-lateral {
-        width: 100vw;
+        width: 60vw;
     }
 }

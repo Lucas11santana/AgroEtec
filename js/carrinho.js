@@ -6,7 +6,16 @@ const carrinhoItens = document.getElementById('carrinho-itens');
 const carrinhoTotal = document.getElementById('carrinho-total');
 const checkoutBtn = document.getElementById('checkout-btn');
 
+// Carrega do localStorage ao iniciar
 let carrinhoProdutos = [];
+const salvo = localStorage.getItem('carrinhoProdutos');
+if (salvo) {
+    carrinhoProdutos = JSON.parse(salvo);
+}
+
+function salvarCarrinho() {
+    localStorage.setItem('carrinhoProdutos', JSON.stringify(carrinhoProdutos));
+}
 
 function abrirCarrinho() {
     carrinho.classList.add('aberto');
@@ -96,6 +105,7 @@ function renderCarrinho() {
         }
     });
     atualizarContadorCarrinho();
+    salvarCarrinho(); // Salva sempre que renderiza
 }
 
 // Exemplo de ação do checkout
@@ -109,5 +119,5 @@ if (checkoutBtn) {
     };
 }
 
-// Atualiza o contador ao carregar a página (caso queira manter o carrinho no localStorage, adicione aqui)
-atualizarContadorCarrinho();
+// Atualiza o contador e carrinho ao carregar a página
+renderCarrinho();
