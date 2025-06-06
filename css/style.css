@@ -441,7 +441,7 @@ header .icons {
 /* Centraliza os cards na tela e reduz o espaço entre eles */
 .Conteiner-produtos {
     display: flex;
-    flex-wrap: wrap;
+  
     gap: 18px; /* Menor distância entre os cards */
     justify-content: center;
     padding: 24px 0;
@@ -615,7 +615,7 @@ header .icons {
     background-color: #1c663b;
     border: none;
     border-radius: 2px;
-    padding: 12px 100px;
+    padding: 12px 90px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 16px;
