@@ -44,7 +44,10 @@
             </form>
 
             <div class="nav-icons">
-                <a href="../cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a id="abrir-carrinho" href="javascript:void(0);">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="carrinho-contador" class="carrinho-contador" style="display:none;">0</span>
+                </a>
                 <a href="../favoritos.html"><i class="fa-regular fa-heart"></i></a>
                 <a href="../user.html"><i class="fa-regular fa-user"></i></i></a>
             </div>
@@ -54,12 +57,274 @@
 
 
     <main>
+        <h1 class="titulo">FRUTAS</h1>
+        <hr>
+
         <div class="categoria">
-            <img class="back" src="../../img/banner5.jpg" alt="background">
-            <h1 style="color: white;">Frutas</h1>
+            <a href="../../main.html">
+                <h4>Inicio/</h4>
+            </a>
+            <h4><strong>Frutas</strong></h4>
         </div>
+
+        <div class="filtros">
+            <div class="dropdown filtro-categorias">
+
+                <button class="dropdown-btn" id="dropdown-categorias-btn">Categorias<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content" id="dropdown-categorias">
+                    <a href="../loja.html" data-categoria="">Todos</a>
+                    <a href="frutas.html" data-categoria="frutas">Frutas</a>
+                    <a href="hortalicas.html" data-categoria="hortalicas">Hortaliças</a>
+                    <a href="grao.html" data-categoria="graos">Grãos e Sementes</a>
+                    <a href="ovos.html" data-categoria="ovo">Ovos</a>
+                </div>
+            </div>
+            <div class="filtro-preco">
+                <label>Preço:</label>
+                <input type="number" id="preco-min" placeholder="Mín" min="0">
+                <span>-</span>
+                <input type="number" id="preco-max" placeholder="Máx" min="0">
+            </div>
+            <div class="dropdown filtro-classificacao">
+                <button class="dropdown-btn" id="dropdown-classificacao-btn">Classificar <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content" id="dropdown-classificacao">
+                    <a href="#" data-classificacao="oferta">Em Oferta</a>
+                    <a href="#" data-classificacao="preco-asc">Menor preço</a>
+                    <a href="#" data-classificacao="preco-desc">Maior preço</a>
+                    <a href="#" data-classificacao="nome-az">Nome A-Z</a>
+                    <a href="#" data-classificacao="nome-za">Nome Z-A</a>
+                </div>
+            </div>
+            <button id="btn-filtrar">Filtrar</button>
+        </div>
+
+        <div class="Produtos-pai">
+            <div class="Conteiner-produtos">
+                <div class="produto-card" data-id="1" id="produto-1" data-categoria="frutas" data-preco="8.99" data-nome="Morango">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/morangos.jpg" alt="Morango" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-15%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Morango (250g)</h3>
+                        <span class="produto-preco">R$ 8,99</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="2" id="produto-2" data-categoria="frutas" data-preco="10.50" data-nome="Uvas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/uvas.jpg" alt="Uvas" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-10%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Uvas (500g)</h3>
+                        <span class="produto-preco">R$ 10,50</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="3" id="produto-3"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/orange.jpg" alt="Laranja" class="produto-imagem" />
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Laranja (1kg)</h3>
+                        <span class="produto-preco">R$ 4,20</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="4" id="produto-4"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/limon.jpg" alt="Limão" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-5%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Limão (500g)</h3>
+                        <span class="produto-preco">R$ 2,80</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="Conteiner-produtos">
+                <div class="produto-card" data-id="5" id="produto-5"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/abacates.jpg" alt="Abacate" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-10%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Abacate (1Un)</h3>
+                        <span class="produto-preco">R$ 5,80</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="6" id="produto-6"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/graviola.jpg" alt="Graviola" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Graviola (1kg)</h3>
+                        <span class="produto-preco">R$ 9,90</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="7" id="produto-7"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/mamaoo.jpg" alt="Mamão" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-10%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Mamão (1kg)</h3>
+                        <span class="produto-preco">R$ 4,80</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+                <div class="produto-card" data-id="8" id="produto-8"data-categoria="frutas">
+                    <div class="produto-imagem-container">
+                        <img src="../../img/abacaxi.jpg" alt="Abacaxi" class="produto-imagem" />
+                        <span class="oferta-badge">Oferta</span>
+                        <span class="desconto">-5%</span>
+                        <a class="heart" href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart filled"></i>
+                        </a>
+                    </div>
+                    <div class="produto-info">
+                        <a class="produto-categoria" href="./frutas.html">Frutas</a>
+                        <h3 class="produto-nome">Abacaxi (1Un)</h3>
+                        <span class="produto-preco">R$ 5,50</span>
+                        <button class="add-ao-carrinho">
+                            <span>Comprar</span>
+                            <img src="../../img/shopping-bag-white-icon.png" alt="Carrinho" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
+    <script src="../../js/menudropdown.js"></script>
+    <script src="../../js/carrinho.js"></script>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-brand">
+                <div class="footer-logo-nome" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="../../img/logotipo.png" alt="Logo AgroEtec" class="footer-logo">
+                    <span class="footer-nome">AgroEtec</span>
+                </div>
+                <p class="footer-desc">
+                    AgroEtec conecta você aos melhores produtos naturais, frescos e sustentáveis.<br>
+                    Qualidade e confiança para sua família.
+                </p>
+                <div class="footer-social-icons">
+                    <a class="x-icon" href="#" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a class="insta-icon" href="#" title="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="link-icon" href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="face-icon" href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Produto</h4>
+                <ul>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Tutoriais</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-bottom-row">
+            <span>&copy; 2025 AgroEtec. Todos os direitos reservados.</span>
+            <div class="footer-bottom-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Configurações de Cookies</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

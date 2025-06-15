@@ -449,6 +449,7 @@ header .icons {
 
 /* Card */
 .produto-card {
+    flex: 0 1 300px; /* Flexível, mas com tamanho mínimo */
     background: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);

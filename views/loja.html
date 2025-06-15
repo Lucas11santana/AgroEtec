@@ -72,33 +72,49 @@
     <script src="../js/favoritos.js"></script>
 
     <main class="loja-main">
-        <div class="loja-titulo">
-            <h1>LOJA</h1>
-        </div>
+        <h1 class="titulo">LOJA</h1>
         <hr>
-        <div class="loja-conteudo">
-            <aside class="loja-sidebar">
-                <form id="filtros-form">
-                    <h3>Categorias</h3>
-                    <div class="filtro-categorias">
-                        <label><input type="checkbox" name="categoria" value="Frutas"> Frutas</label>
-                        <label><input type="checkbox" name="categoria" value="Hortaliças"> Hortaliças</label>
-                        <label><input type="checkbox" name="categoria" value="Grãos e Sementes"> Grãos e Sementes</label>
-                        <label><input type="checkbox" name="categoria" value="Ovos"> Ovos</label>
-                    </div>
-                    <h3>Preço</h3>
-                    <div class="filtro-preco">
-                        <input type="number" name="preco-min" placeholder="Mín" min="0" step="0.01">
-                        <span> - </span>
-                        <input type="number" name="preco-max" placeholder="Máx" min="0" step="0.01">
-                    </div>
-                    <button type="submit" class="btn-filtrar">Filtrar</button>
-                </form>
-            </aside>
-            <section class="loja-produtos">
-                <div id="produtos-lista" class="Conteiner-produtos"></div>
-            </section>
+
+        <div class="categoria">
+            <a href="../../main.html">
+                <h4>Inicio/</h4>
+            </a>
+            <h4><strong>Loja</strong></h4>
         </div>
+
+        <div class="filtros">
+            <div class="dropdown filtro-categorias">
+
+                <button class="dropdown-btn" id="dropdown-categorias-btn">Categorias<i class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content" id="dropdown-categorias">
+                    <a href="loja.html" data-categoria="">Todos</a>
+                    <a href="../views/sub-paginas/frutas.html" data-categoria="frutas">Frutas</a>
+                    <a href="../views/sub-paginas/hortalicas.html" data-categoria="hortalicas">Hortaliças</a>
+                    <a href="../views/sub-paginas/grao.html" data-categoria="graos">Grãos e Sementes</a>
+                    <a href="../views/sub-paginas/ovos.html" data-categoria="ovo">Ovos</a>
+                </div>
+            </div>
+            <div class="filtro-preco">
+                <label>Preço:</label>
+                <input type="number" id="preco-min" placeholder="Mín" min="0">
+                <span>-</span>
+                <input type="number" id="preco-max" placeholder="Máx" min="0">
+            </div>
+            <div class="dropdown filtro-classificacao">
+                <button class="dropdown-btn" id="dropdown-classificacao-btn">Classificar <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content" id="dropdown-classificacao">
+                    <a href="#" data-classificacao="oferta">Em Oferta</a>
+                    <a href="#" data-classificacao="preco-asc">Menor preço</a>
+                    <a href="#" data-classificacao="preco-desc">Maior preço</a>
+                    <a href="#" data-classificacao="nome-az">Nome A-Z</a>
+                    <a href="#" data-classificacao="nome-za">Nome Z-A</a>
+                </div>
+            </div>
+            <button id="btn-filtrar">Filtrar</button>
+        </div>
+
+
     </main>
 
     <script src="../js/loja.js"></script>
